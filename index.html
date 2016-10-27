@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Photo Gallery</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="tipuedrop/tipuedrop.css">
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+<body>
+	<header class="clearfix">
+			<div class="search">
+				<div class="search_image">
+                    <input id="tipue_drop_input" type="text" autocomplete="off" required/>
+                    <div id="tipue_drop_content"></div>
+                </div>    
+            </div>    
+	</header>
+	<div class="clearfix"></div>
+	<section class="container">
+		<ul>
+			<li><a class="fancybox" rel="gallery1" href="img/bg/01.jpg" title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+				<img src="img/tbn/01.jpg" alt="Hay Bales" /></a></li>
+			<li><a class="fancybox" rel="gallery1" href="img/bg/02.jpg" title="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+				<img src="img/tbn/02.jpg" alt="Lake" /></a></li>
+			<li><a class="fancybox" rel="gallery1" href="img/bg/03.jpg" title="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+				<img src="img/tbn/03.jpg" alt="Canyon" /></a></li>
+			<li><a class="fancybox" rel="gallery1" href="img/bg/04.jpg" title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today. ">
+				<img src="img/tbn/04.jpg" alt="Iceberg" /></a></li>
+			<li><a class="fancybox" rel="gallery1" href="img/bg/05.jpg" title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+				<img src="img/tbn/05.jpg" alt="Desert" /></a></li>
+			<li><a class="fancybox" rel="gallery1" href="img/bg/06.jpg" title="Fall is coming, I love when the leaves on the trees start to change color.">
+				<img src="img/tbn/06.jpg" alt="Fall" /></a></li>
+			<li><a class="fancybox" rel="gallery1" href="img/bg/07.jpg" title="I drove past this plantation yesterday, everything is so green!">
+				<img src="img/tbn/07.jpg" alt="Plantation" /></a></li>
+			<li><a class="fancybox" rel="gallery1" href="img/bg/08.jpg" title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+				<img src="img/tbn/08.jpg" alt="Dunes" /></a></li>
+			<li><a class="fancybox" rel="gallery1" href="img/bg/09.jpg" title="We enjoyed a quiet stroll down this countryside lane. ">
+				<img src="img/tbn/09.jpg" alt="Countryside Lane" /></a></li>
+			<li><a class="fancybox" rel="gallery1" href="img/bg/10.jpg" title="Sunset at the coast! The sky turned a lovely shade of orange.">
+				<img src="img/tbn/10.jpg" alt="Sunset" /></a></li>
+			<li><a class="fancybox" rel="gallery1" href="img/bg/11.jpg" title="I did a tour of a cave today and the view of the landscape below was breathtaking.">
+				<img src="img/tbn/11.jpg" alt="Cave" /></a></li>
+			<li><a class="fancybox" rel="gallery1" href="img/bg/12.jpg" title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+				<img src="img/tbn/12.jpg" alt="Bluebells" /></a></li>
+			
+
+
+		</ul>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+	<script src="tipuedrop/tipuedrop_content.js"></script>
+	<script type="text/javascript" src="tipuedrop/tipuedrop.min.js"></script> 
+	<script type="text/javascript">
+		$('#tipue_drop_input').tipuedrop({
+			'show': 5
+		});
+	</script> 
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script type="text/javascript">
+		$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none',
+		maxWidth : 800,
+		helpers:  {
+        title : {
+            type: 'outside'
+        },
+        overlay : {
+            showEarly : false
+        }
+    }
+	});
+
+	</script>
+
+
+</body>
+</html>
